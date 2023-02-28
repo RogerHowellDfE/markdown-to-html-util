@@ -2,6 +2,8 @@
 
 This is a _very_ quickly thrown-together demo/PoC.
 
+Data entered is not transmitted or stored anywhere -- it operates entirely as a static HTML+JavaScript page.
+
 **Steps:**
 
 - Add Markdown within the input
