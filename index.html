@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Markdown to HTML Utility</title>
+
+    <link href="lib/bootstrap-5.2.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="col-lg-8 mx-auto p-3 py-md-5">
+    <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+        <h1 class="fs-4">Markdown to HTML Utility</h1>
+    </header>
+
+    <main>
+        <div class="row mb-3">
+            <div class="col-12">
+                <div id="alert_javascript_must_be_enabled" class="alert alert-danger" role="alert">
+                    Warning - JavaScript must be enabled!
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-6">
+                <label for="markdown_input" class="form-label">Markdown Input</label>
+                <textarea class="form-control" style="font-family: monospace; font-size: smaller;" id="markdown_input" rows="10">## ABC</textarea>
+            </div>
+            <div class="col-6">
+                <label for="html_output" class="form-label">HTML Output</label>
+                <textarea class="form-control" style="font-family: monospace; font-size: smaller;" id="html_output" rows="10"></textarea>
+            </div>
+        </div>
+
+        <div class="row mt-5 mb-3">
+            <div class="col-12">
+                <div class="alert alert-primary" role="alert">
+                    <p>Note that this page is a _very_ quickly thrown-together proof-of-concept/demo utility.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div id="preview_output_container" class="card p-5" style="background-color: #fbfbfd"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="pt-5 my-5 text-muted border-top">
+        <p>
+            Website created by Roger Howell &copy; 2023
+        </p>
+    </footer>
+</div>
+
+<script src="/lib/marked-4.2.12/marked.min.js"></script>
+<script src="/lib/DOMPurify-3.0.1-dist/purify.min.js"></script>
+<script src="/lib/bootstrap-5.2.3/js/bootstrap.bundle.min.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
